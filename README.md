@@ -1,2 +1,2 @@
 # Cat
-https://aleksandr-tes.github.io/Cat/
+https://aleksandr-tes.github.io/Cats/
