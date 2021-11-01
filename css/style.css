@@ -25,11 +25,17 @@ a {
 
 
 .container {
-    max-width: 1170px;
+    max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
 /* ////// */
+.title-h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 122%;
+}
+/* =================================== */
 body {
     font-family: 'Montserrat', sans-serif;
     color: #242424;
@@ -331,6 +337,122 @@ input[type=number]::-webkit-outer-spin-button {
 .header__bottom-item p {
     margin-left: 20px;
 }
+/* ========================= */
+
+/* =========== prices ========== */
+
+.prices__title {
+    display: flex;
+    align-items: center;
+}
+.prices__image {
+    width: 283px;
+    margin-left: 25%;
+}
+.prices__wrap {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0 170px;
+}
+.prices__card {
+    width: 380px;
+    border: 1px solid #F6A6BF;
+    box-sizing: border-box;
+}
+/* .prices__card-image {
+    width: 380px;
+
+} */
+.prices__info {
+    padding: 20px 20px 30px;
+}
+.prices__room {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 43px;
+}
+.prices__room-level {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #F6A6BF;   
+    flex: 0 0 50%; 
+}
+.prices__room-cost {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #242424;
+    flex: 0 0 50%;
+}
+.prices__size {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 24px;
+}
+.prices__size-room {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #848484;
+    flex: 0 0 50%;
+}
+.prices__size-scale {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    color: #242424;  
+    flex: 0 0 50%;  
+}
+.prices-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+    /*padding: 21px 82px;
+    */background: #F6A6BF;
+    border-radius: 100px;
+    margin-top: 40px;
+    min-height: 70px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+}
+.prices-btn:hover {
+    border: 1px solid #F6A6BF;
+    color: #F6A6BF;
+    background: #FFFFFF;
+}
+
+
+/* =============== */
+.slick-prev {
+    left: 10px;
+    z-index: 1;
+}
+.slick-next {
+    right: 10px;
+    z-index: 1;
+}
+/* =========== prices / ========== */
+
+
+
+
+
+
+
+
+
 
 
 
@@ -389,6 +511,21 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 /* ====== Медиа 1140px /====== */
+
+/* ====== Медиа 850px ====== */
+@media (max-width: 850px) {
+    .prices__title {
+        flex-direction: column;
+    }
+    .title-h2 {
+        margin-top: 50px;
+    }
+    .prices__image {
+        width: 283px;
+        margin: 50px 0 0;
+    }
+}
+/* ====== Медиа 850px /====== */
 
 /* ====== Медиа 768px ====== */
 @media (max-width: 768px) {
@@ -482,6 +619,34 @@ input[type=number]::-webkit-outer-spin-button {
     .header__bottom-item p {
         margin-left: 15px;
         font-size: 15px;
+    }
+    .title-h2 {
+        font-size: 10vw;
+    }
+    .prices__card {
+        width: 100%;
+    }
+    .prices__room {
+        flex-direction: column;
+    }
+    .prices__room-level br {
+        display: none;
+    }
+    .prices__size {
+        flex-direction: column;
+    }
+    .prices__size-scale br {
+        display: none;
+    }
+    .prices__size-scale span {
+        margin-left: 30px;
+    }
+    .prices__room {
+        margin-bottom: 20px;
+    }
+    .prices-btn {
+        font-size: 16px;
+        min-height: 55px;
     }
 }
 /* ====== Медиа 400px /====== */
