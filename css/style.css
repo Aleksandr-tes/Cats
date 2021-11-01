@@ -354,7 +354,7 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 30px 0 170px;
+    margin: 30px 0 70px;
 }
 .prices__card {
     width: 380px;
@@ -444,6 +444,63 @@ input[type=number]::-webkit-outer-spin-button {
     z-index: 1;
 }
 /* =========== prices / ========== */
+
+/* =========== gallery ========== */
+
+.gallery {
+    padding-bottom: 100px;
+}
+.gallery__block {
+    margin: 50px 0;
+    /* border: 1px solid #7e47ff; */
+}
+.gallery__block-item {
+    padding: 0 10px;
+}
+.gallery__block-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 340px;
+}
+
+.gallery__block .slick-prev, .gallery__block .slick-next {
+    top: auto;
+    bottom: -100px;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -ms-transform: translate(0);
+    -moz-transform: translate(0);
+    -o-transform: translate(0);
+    background: #F6A6BF;
+    border: 1px solid #F6A6BF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.gallery__block .slick-prev:before, .gallery__block .slick-next:before {
+    font-size: 32px;
+}
+.gallery__block .slick-next {
+    right: auto;
+    left: 100px;
+    z-index: 1;
+}
+.gallery__block .slick-prev:hover, .gallery__block .slick-prev:focus, .gallery__block .slick-next:hover, .gallery__block .slick-next:focus {
+    color: #F6A6BF;
+    outline: none;
+    background: #ffc4d6;
+}
+
+/* =========== gallery / ========== */
 
 
 
@@ -554,8 +611,22 @@ input[type=number]::-webkit-outer-spin-button {
         margin: 0 0px 30px 0;
         width: 100%;
     }
+    .prices__wrap {
+        margin: 30px 0 10px;
+    }
+    .title-h2 {
+        margin-top: 0px;
+    }
 }
 /* ====== Медиа 768px /====== */
+
+/* ====== Медиа 700px ====== */
+@media (max-width: 700px) {
+    .gallery__block-item {
+        padding: 0;
+    }
+}
+/* ====== Медиа 700px /====== */
 
 /* ====== Медиа 650px ====== */
 @media (max-width: 650px) {
@@ -647,6 +718,17 @@ input[type=number]::-webkit-outer-spin-button {
     .prices-btn {
         font-size: 16px;
         min-height: 55px;
+    }
+    .gallery__block .slick-prev, .gallery__block .slick-next {
+        bottom: -80px;
+        width: 60px;
+        height: 60px;
+    }
+    .gallery__block .slick-prev:before, .gallery__block .slick-next:before {
+        font-size: 30px;
+    }
+    .gallery__block .slick-next {
+        left: 82px;
     }
 }
 /* ====== Медиа 400px /====== */
