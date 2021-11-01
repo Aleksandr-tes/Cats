@@ -1,3 +1,26 @@
+
+// $('.prices__card-image').slick();
+
+$('.prices__card-image').slick({
+  infinite: true,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $('.class-mi').slick({
    dots: true,
    infinite: true,
