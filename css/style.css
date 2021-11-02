@@ -359,7 +359,7 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 30px 0 70px;
+    margin: 30px 0 30px;
 }
 .prices__card {
     width: 380px;
@@ -368,7 +368,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 /* .prices__card-image {
     width: 380px;
-
 } */
 .prices__info {
     padding: 20px 20px 30px;
@@ -564,6 +563,77 @@ input[type=number]::-webkit-outer-spin-button {
 }
 /* =========== conditions / ========== */
 
+/* =========== reserv ========== */
+.reserv {
+    padding-top: 70px;
+}
+.reserv__block {
+    display: flex;
+    margin-top: 50px;
+}
+.reserv__block-item {
+    flex: 1 1 50%
+}
+.reserv__block-image {
+    margin-right: 45px;
+}
+.reserv__block-image img {
+    margin: 0 auto
+}
+.reserv__form {
+    display: flex;
+    gap: 50px 40px;
+    flex-wrap: wrap;
+    padding: 50px;
+    background: #FFFEF1;
+    width: 100%;
+}
+.reserv__form input {
+    width: 230px;
+    height: 36px;
+    border: none;
+    border-bottom: 1px solid #242424;
+    background: transparent;
+    font-size: 16px;
+    line-height: 140%;
+    color: #848484;
+}
+.reserv__form input:focus {
+    outline: none;
+} 
+.reserv-input {
+    width: 100% !important;
+}
+.reserv-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #FFFFFF;
+    background: #F6A6BF;
+    border-radius: 100px;
+    width: 330px;
+    min-width: 70px;
+    padding: 21px 20px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+}
+.reserv-btn:hover {
+    border: 1px solid #F6A6BF;
+    color: #F6A6BF;
+    background: #FFFFFF;
+}
+
+/* =========== reserv / ========== */
+
 
 
 
@@ -612,6 +682,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
+/* ====== Медиа 1250px ====== */
+@media (max-width: 1250px) {
+    .reserv__form {
+        display: flex;
+        gap: 45px 40px;
+        padding: 25px;
+    }
+}
+/* ====== Медиа 1250px /====== */ 
+
 /* ====== Медиа 1140px ====== */
 @media (max-width: 1140px) {
     .header__content {
@@ -627,6 +707,15 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .header__content-right {
         margin-left: 0;
+    }
+    .reserv__block {
+        flex-direction: column;
+    }
+    .reserv__block-image {
+        margin-right: 0;
+    }
+    .reserv__form {
+       margin-top: 50px;
     }
 }
 /* ====== Медиа 1140px /====== */
@@ -721,6 +810,12 @@ input[type=number]::-webkit-outer-spin-button {
         margin-bottom: 40px;
         font-size: 35px;
     }
+    .reserv__form input {
+        width: 100%;
+    }
+    .title-h2 {
+        font-size: 6vw;
+    }
 }
 /* ====== Медиа 650px /====== */
 
@@ -783,7 +878,7 @@ input[type=number]::-webkit-outer-spin-button {
         font-size: 15px;
     }
     .title-h2 {
-        font-size: 9vw;
+        font-size: 6vw;
     }
     .prices__card {
         width: 100%;
@@ -849,6 +944,12 @@ input[type=number]::-webkit-outer-spin-button {
     .conditions__text {
         font-size: 16px;
     }
+    .reserv__form {
+        margin-top: 30px;
+    }
+    .reserv-btn {
+        font-size: 16px;
+    } 
 }
 /* ====== Медиа 400px /====== */
 
