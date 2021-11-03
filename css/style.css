@@ -709,7 +709,53 @@ input[type=number]::-webkit-outer-spin-button {
 .about {
     padding: 150px 0 0;
 }
-
+.about__top {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.about__top-item {
+    flex: 1 1 50%
+}
+.about p {
+    margin-left: 50px;
+}
+.about__top-item-2 p {
+    max-width: 480px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+/* ======== */
+.about__main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about__main-item {
+    flex: 1 1 50%;
+}
+.about__main-item-a {
+    position: relative;
+}
+.about__main-item-a::before {
+    position: absolute;
+    content: '';
+    background: url(../img/about/about-1.svg) 0 0 / 400px no-repeat;
+    min-height: 417px;
+    width: 400px;
+    top: -75px;
+}
+.about__main-h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%; 
+    max-width: 397px;   
+}
+.about__main-text-p {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 25px;
+}
 /* =========== about / ========== */
 
 
@@ -795,6 +841,7 @@ input[type=number]::-webkit-outer-spin-button {
     .reserv__form {
        margin-top: 50px;
     }
+
 }
 /* ====== Медиа 1140px /====== */
 
@@ -821,6 +868,35 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .videonab__block {
         margin-top: 40px;
+    }
+    .about {
+        padding: 100px 0 0;
+    }
+    .about p {
+        margin-left: 0;
+    }  
+    .about__top {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .about__top-item {
+        width: 100%;
+    }
+    .about__main-item{
+        width: 100%;
+    }
+    .about__top-item-2 {
+        margin: 15px 0 0;
+    }
+    .about__main {
+        flex-direction: column;
+    }
+    .about__main-item-a::before {
+        background: none;
+        content: none;
+    }
+    .about__main-h4 {
+        margin-bottom: 20px;
     }
 }
 /* ====== Медиа 992px /====== */
@@ -939,6 +1015,13 @@ input[type=number]::-webkit-outer-spin-button {
         content: url(../img/videonab/videonab-4.svg);
         bottom: 6px;
         right: 4px;
+    }
+    .about {
+        padding: 50px 0 0;
+    }
+    .about__top-item-2 p {
+        font-size: 18px;
+        line-height: 150%;
     }
 }
 /* ====== Медиа 550px /====== */
@@ -1100,6 +1183,14 @@ input[type=number]::-webkit-outer-spin-button {
         line-height: 140%;
         color: #848484;
         background: transparent;
+    }
+    .about__top-item-2 p {
+        font-size: 16px;
+    }
+    .about__main-h4 {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 140%;
     }
 }
 /* ====== Медиа 400px /====== */
