@@ -566,6 +566,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* =========== reserv ========== */
 .reserv {
     padding-top: 70px;
+    margin-bottom: 130px;
 }
 .reserv__block {
     display: flex;
@@ -633,6 +634,81 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* =========== reserv / ========== */
+
+/* =========== videonab ========== */
+
+
+.videonab__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.videonab__top p {
+    max-width: 450px;
+    font-size: 18px;
+    line-height: 140%;
+    margin: 0 5%;
+}
+.videonab__block {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.videonab__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;   
+    max-width: 410px; 
+    margin-right: 6%;
+}
+.videonab__block-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    background: #FAF7F5;
+    opacity: 0.5;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 122%;
+    color: #E36F96;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.videonab__block-item::before {
+    position: absolute;
+    content: url(../img/videonab/videonab-1.svg);
+    width: 70px;
+    height: 57px;
+    bottom: -8px;
+    right: -8px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.videonab__block-item:hover::before {
+    content: url(../img/videonab/videonab-2.svg);
+    bottom: 20px;
+    right: 4px;
+}
+
+/* =========== videonab / ========== */
+
+/* =========== about ========== */
+.about {
+    padding: 150px 0 0;
+}
+
+/* =========== about / ========== */
 
 
 
@@ -732,18 +808,32 @@ input[type=number]::-webkit-outer-spin-button {
     .conditions__indent {
         padding: 0;
     }
-    
+    .reserv {
+        margin-bottom: 70px;
+    }
+    .videonab__top {
+        flex-direction: column;
+    }
+    .videonab__top p {
+        margin: 5% 0 0;
+    }
+    .videonab__block {
+        margin-top: 40px;
+    }
 }
 /* ====== Медиа 992px /====== */
 
 /* ====== Медиа 850px ====== */
 @media (max-width: 850px) {
+    .header__bottom {
+        margin-bottom: 50px;
+    }
     .prices__title {
         flex-direction: column;
     }
-    .title-h2 {
+    /* .title-h2 {
         margin-top: 50px;
-    }
+    } */
     .prices__image {
         width: 283px;
         margin: 50px 0 0;
@@ -819,6 +909,38 @@ input[type=number]::-webkit-outer-spin-button {
 }
 /* ====== Медиа 650px /====== */
 
+/* ====== Медиа 550px ====== */
+@media (max-width: 550px) {
+    .videonab__block {
+        justify-content: center;
+    }
+    .videonab__text {
+        margin: 0;
+        min-width: 100%;
+    }
+    .videonab__block {
+        margin-top: 20px;
+    }
+    .videonab__block-item {
+        width: 80px;
+        height: 80px;
+        font-size: 20px;
+    }
+    .videonab__block-item::before {
+        content: url(../img/videonab/videonab-3.svg);
+        width: 40px;
+        height: 33px;
+        bottom: -3px;
+        right: -3px;
+    }
+    .videonab__block-item:hover::before {
+        content: url(../img/videonab/videonab-4.svg);
+        bottom: 6px;
+        right: 4px;
+    }
+}
+/* ====== Медиа 550px /====== */
+
 /* ====== Медиа 450px ====== */
 @media (max-width: 450px) {
 .header__content-left {
@@ -867,6 +989,12 @@ input[type=number]::-webkit-outer-spin-button {
     .conditions .title-h2 {
         margin-bottom: 40px;
         font-size: 30px;
+    }
+    .videonab__top p {
+        font-size: 17px;
+    }
+    .videonab__text {
+        font-size: 17px;
     }
 }
 /* ====== Медиа 450px /====== */
@@ -944,12 +1072,21 @@ input[type=number]::-webkit-outer-spin-button {
     .conditions__text {
         font-size: 16px;
     }
+    .reserv {
+        margin-bottom: 50px;
+    }
     .reserv__form {
         margin-top: 30px;
     }
     .reserv-btn {
         font-size: 16px;
     } 
+    .videonab__top p {
+        font-size: 16px;
+    }
+    .videonab__text {
+        font-size: 16px;
+    }
 }
 /* ====== Медиа 400px /====== */
 
