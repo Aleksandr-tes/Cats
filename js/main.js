@@ -53,12 +53,6 @@ $('.gallery__block').slick({
 
 
 
-
-
-
-
-
-
 $('.class-mi').slick({
    dots: true,
    infinite: true,
@@ -91,5 +85,31 @@ $('.class-mi').slick({
      }
    ]
  });
+
+
+// ===================================
+
+let showLink = document.querySelectorAll('.videonab-hidden');
+let btnVid = document.querySelector('.videonab__btn-po');
+
+btnVid.addEventListener('click', showFun);
+
+function showFun() {
+  // showLink.forEach(e => {
+  //    e.style.display = 'flex';
+  // });
+  for (let i = 0; i < showLink.length; i++) {
+    showLink[i].style.display = 'flex';
+    btnVid.style.display = 'none';
+  }
+  
+}
+
+
+//   if (showLink.style.display === 'block' ) {
+//     btnVid.style.display = 'none';
+
+  
+// }
 
 
