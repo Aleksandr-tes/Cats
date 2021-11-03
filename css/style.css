@@ -700,7 +700,9 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 20px;
     right: 4px;
 }
-
+.videonab__btn-po {
+    display: none;
+}
 /* =========== videonab / ========== */
 
 /* =========== about ========== */
@@ -1086,6 +1088,18 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .videonab__text {
         font-size: 16px;
+    }
+    .videonab-hidden {
+        display: none;
+    }
+    .videonab__btn-po {
+        display: block;
+        border: none;
+        margin: 30px auto 0;
+        font-size: 14px;
+        line-height: 140%;
+        color: #848484;
+        background: transparent;
     }
 }
 /* ====== Медиа 400px /====== */
