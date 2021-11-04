@@ -828,6 +828,91 @@ input[type=number]::-webkit-outer-spin-button {
 }
 /* =========== importantee / ========== */
 
+/* =========== fears ========== */
+.fears {
+    margin-top: 170px;
+}
+.fears__block {
+    margin-top: 80px;
+}
+.fears__block-item {
+    background: #FAF7F5;
+    padding: 19px 30px 21px;
+    margin-bottom: 5px;
+}
+.fears__block-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.fears__block-title h5 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    padding-right: 15px;
+}
+.fears__block-btn {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.fears__block-btn span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #F6A6BF;
+    position: relative;
+}
+.fears__block-btn span::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 30px;
+    height: 2px;
+    background: #F6A6BF;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.fears__block-hidden  {
+    display: none;
+}
+.fears__block-hidden p {
+    margin-top: 25px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 720px;
+}
+.fears__show-hidden {
+    display: block;
+}
+.fears__block-btn-active {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+}
+/* =========== fears / ========== */
+
+/* =========== cooperation ========== */
+.cooperation {
+    margin-top: 170px;
+}
+
+/* =========== cooperation / ========== */
+
 
 
 
@@ -969,6 +1054,9 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .about__main-h4 {
         margin-bottom: 20px;
+    }
+    .fears {
+        margin-top: 100px;
     }
 }
 /* ====== Медиа 992px /====== */
@@ -1190,6 +1278,31 @@ input[type=number]::-webkit-outer-spin-button {
     .importantee__block-item h3 {
         font-size: 20px;
         margin-bottom: 10px;
+    }
+    .fears {
+        margin-top: 25px;
+    }
+    .fears__block {
+        margin-top: 25px;
+    }
+    .fears__block-item {
+        padding: 15px 12px 15px;
+    }
+    .fears__block-title h5 {
+        font-size: 16px;
+    }
+    .fears__block-btn {
+        width: 16px;
+        height: 16px;
+    }
+    .fears__block-btn span {
+        width: 16px;
+    }
+    .fears__block-btn span::before {
+        width: 16px;
+    }
+    .cooperation {
+        margin-top: 50px;
     }
 }
 /* ====== Медиа 450px /====== */
