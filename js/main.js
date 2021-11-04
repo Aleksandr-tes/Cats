@@ -105,11 +105,40 @@ function showFun() {
   
 }
 
+// ==============  Аккардион  ===============
 
-//   if (showLink.style.display === 'block' ) {
-//     btnVid.style.display = 'none';
+// let showFearsBlock = document.querySelector('.fears__block-item');
+// let showFears = document.querySelector('.fears__block-hidden');
+// let btnFears = document.querySelector('.fears__block-btn');
 
-  
-// }
+// showFearsBlock.addEventListener('click', accardion);
+
+// function accardion() {
+//   if (showFears.style.display === 'block') {
+//     showFears.style.display = 'none';
+//     btnFears.style.transform = 'rotate(90deg)';
+//   } else {
+//     showFears.style.display = 'block';
+//     btnFears.style.transform = 'rotate(135deg)';
+//   }
+//   console.log(showFears);
+// } 
 
 
+let showFearsBlock = document.querySelectorAll('.fears__block-item');
+let showFears = document.querySelectorAll('.fears__block-hidden');
+let btnFears = document.querySelectorAll('.fears__block-btn');
+
+for (let i = 0; i < showFearsBlock.length; i++) {
+
+  showFearsBlock[i].onclick = function(){
+
+    // for (let j = 0; j < showFears.length; j++ ){
+    //   showFears[j].classList.remove('fears__show-hidden');
+    // }
+
+    showFears[i].classList.toggle('fears__show-hidden'); 
+    btnFears[i].classList.toggle('fears__block-btn-active'); 
+    }
+}
+// https://www.youtube.com/watch?v=5eCY1-11wAE
