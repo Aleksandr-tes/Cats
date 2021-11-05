@@ -910,7 +910,76 @@ input[type=number]::-webkit-outer-spin-button {
 .cooperation {
     margin-top: 170px;
 }
-
+.cooperation__block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cooperation__block-item {
+    flex: 1 1 50%;
+}
+.cooperation__block-item h6 {
+    margin: 70px 0 30px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+}
+.cooperation__block-item p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    max-width: 491px;
+}
+.cooperation__block-item-a {
+    display: flex;
+    flex-direction: column;
+}
+.cooperation__block-item-b {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cooperation__block-item-b a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 246px;
+    min-height: 246px;
+    border: 1px solid #F6A6BF;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.cooperation__block-item-b a:hover {
+    background: #fcf3f6;
+    border: 1px solid #fcf3f6;
+}
+.cooperation__block-item-b a::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    content: url(../img/cooperation/cooperation-1.svg);
+    width: 245px;
+    height: 245px;
+    top: 0;
+}
+.cooperation__block-item-b a span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    padding: 5px;
+}
 /* =========== cooperation / ========== */
 
 
@@ -999,6 +1068,22 @@ input[type=number]::-webkit-outer-spin-button {
     .offer__block {
         flex-direction: column;
     }
+    .cooperation {
+        margin-top: 100px;
+    }
+    .cooperation__block {
+        flex-direction: column;
+    }
+    .cooperation__block-item {
+        margin-bottom: 30px;
+    }
+    .cooperation__block-item-b {
+        justify-content: left;
+    }
+    .cooperation__block-item h6 {
+        margin: 30px 0 20px;
+    }
+
 }
 /* ====== Медиа 1140px /====== */
 
@@ -1158,6 +1243,9 @@ input[type=number]::-webkit-outer-spin-button {
     .title-h2 {
         font-size: 6vw;
     }
+    .cooperation__block-item-b {
+        justify-content: space-evenly;
+    }
 }
 /* ====== Медиа 650px /====== */
 
@@ -1303,6 +1391,41 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .cooperation {
         margin-top: 50px;
+    }
+    .cooperation__block-item-b {
+        gap: 30px;
+    }
+    .cooperation__block-item-b a {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 100%;
+        min-height: 60px;
+        border: none;
+        box-sizing: border-box;
+        position: relative;
+        border-radius: initial;
+        -webkit-border-radius: initial;
+        -moz-border-radius: initial;
+        -ms-border-radius: initial;
+        -o-border-radius: initial;
+    }
+    
+    .cooperation__block-item-b a::before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        content: url(../img/cooperation/cooperation-1-mini.svg);
+        width: 73px;
+        height: 100%;
+        
+    }
+    .cooperation__block-item-b a span {
+        text-align: left;
+        padding: 5px;
+        padding-left: 100px;
+        height: 100%;
     }
 }
 /* ====== Медиа 450px /====== */
